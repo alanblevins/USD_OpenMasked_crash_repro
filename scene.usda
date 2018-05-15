@@ -1,0 +1,24 @@
+#usda 1.0
+(
+    endTimeCode = 150
+    startTimeCode = 100
+    upAxis = "Y"
+)
+
+def Scope "Scene"
+{
+
+  def "asset1" (
+      instanceable = True
+      add references = @sphere.usdc@</test>
+  )
+  {
+  }
+
+  def "asset2" (
+      add references = @sphere.usdc@</test>
+  )
+  {
+  }
+
+}
